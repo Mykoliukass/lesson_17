@@ -1,0 +1,2 @@
+2023-11-08 20:33:00,621 - ERROR - Error in input validation: Invalid input. Please provide a valid date in the format: YYYY:MM:DD
+2023-11-08 20:36:21,778 - ERROR - Error in input validation: Invalid input. Day should be between 1 and 31.
