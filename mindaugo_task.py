@@ -19,6 +19,7 @@
 
 import logging
 from typing import List
+import sys
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -108,5 +109,21 @@ def add_checked_flag(key, dictionary):
         if "Checked" not in values:
             values.append("Checked")
     
-for key in dictionary_of_functions:
-    print(key)
+def select_function_or_leave():
+    while True:
+        try:
+            select_function = int(input("What would be your choice? Please select one of the 7 functions above! If you want to leave, press 0!"))
+            if 1 <= select_function <= 7:
+                break
+            elif select function == 0:
+                sys.exit()
+            else:
+                print("Please enter a number between 1 and 7. If you want to leave, press 0!")
+        except Exception as e:
+            print("Please enter a valid integer.")
+            logging.exception(f"Error in selecting a function: {e}")
+
+while True:    
+    for key in dictionary_of_functions:
+        print(key)
+
